@@ -30,11 +30,26 @@ public class LineComparison2 {
 			System.out.println("THE FIRST LINE IS LARGER IN LENGTH COMPARED TO THE SECOND LINE");
 		}
 	}
+	void equal()
+	{	System.out.println("Enter the coordinates of first line");
+		String p=String.valueOf(Length());
+		System.out.println("Enter the coordinates of second line");
+		String q=String.valueOf(Length());
+		if(p.equals(q))
+		{
+			System.out.println("THE TWO LINES ARE EQUAL");
+		}
+		else
+		{
+			System.out.println("THE TWO LINES ARE NOT EQUAL");
+		}
+	}
 	
 	public static void main (String a0rgs[])
 	{
 		LineComparison2 l=new LineComparison2();
 		Scanner sc=new Scanner(System.in);
 		l.comp();	
+		l.equal();
 	}
 }
